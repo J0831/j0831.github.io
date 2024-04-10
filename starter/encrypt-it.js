@@ -17,10 +17,41 @@
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
+    document.getElementById('encrypt-it').addEventListener("click", handleShift);
+    document.getElementById('reset').addEventListener("click", handleReset);
   }
 
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
+  function handleShift(){
+    document.getElementById('result').innerHTML = shiftCipher(document.getElementById('input-text').value);
+  }
+
+  function handleReset(){
+    document.getElementById('input-text').value = "";
+  }
+
+  /**
+   * Returns an encrypted version of the given text, where
+   * each letter is shifted alphabetically ahead by 1 letter,
+   * and 'z' is shifted to 'a' (creating an alphabetical cycle).
+   */
+  function shiftCipher(text) {
+    text = text.toLowerCase();
+    let result = "";
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] < 'a' || text[i] > 'z') {
+        result += text[i];
+      } else if (text[i] == 'z') {
+        result += 'a';
+      } else { // letter is between 'a' and 'y'
+        let letter = text.charCodeAt(i);
+        let resultLetter = String.fromCharCode(letter + 1);
+        result += resultLetter;
+      }
+    }
+    return result;
+  }
 
 })();
