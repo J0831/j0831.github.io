@@ -3,11 +3,20 @@ body{
     color: white;
 }
 
-group, #result{
+legend{
+    text-align: center;
+}
+
+legend{
+    padding: 0 16pt;
+    font-size: 16pt;
+}
+
+fieldset{
     border-radius: 5pt;
 }
 
-group{
+fieldset{
     width: 80%;
     padding: 7pt 14pt;
     border: 1.5pt solid white;
