@@ -5,4 +5,8 @@ body{
 
 group{
     border-radius: 5pt;
+    width: 80%;
+    padding: 7pt 14pt;
+    border: 1.5pt solid white;
+    margin: 14pt auto;
 }
