@@ -4,10 +4,6 @@ body{
 }
 
 legend{
-    text-align: center;
-}
-
-legend{
     padding: 0 16pt;
     font-size: 16pt;
 }
