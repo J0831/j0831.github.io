@@ -2,3 +2,7 @@ body{
     background-color: #202020;
     color: white;
 }
+
+group{
+    border-radius: 5pt;
+}
