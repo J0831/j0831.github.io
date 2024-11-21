@@ -3,8 +3,11 @@ body{
     color: white;
 }
 
-group{
+group, #result{
     border-radius: 5pt;
+}
+
+group{
     width: 80%;
     padding: 7pt 14pt;
     border: 1.5pt solid white;
