@@ -20,13 +20,13 @@ fieldset {
 }
 
 fieldset {
-    animation: fade-in-left 1s;
+    animation: fade-in-left 3s;
     animation-fill-mode: both;
 }
 
 @keyframes fade-in-left {
     from {
-        transform: translateX(-8pt);
+        transform: translateX(28pt);
         opacity: 0;
     }
     to {
