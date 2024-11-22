@@ -1,20 +1,36 @@
-body{
+body {
     background-color: #202020;
     color: white;
 }
 
-legend{
+legend {
     padding: 0 16pt;
     font-size: 28pt;
 }
 
-fieldset{
+fieldset {
     border-radius: 5pt;
 }
 
-fieldset{
+fieldset {
     width: 90%;
     padding: 7pt 14pt;
     border: 1.5pt solid white;
     margin: 14pt auto;
+}
+
+fieldset {
+    animation: fade-in-left 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-in-left {
+    from {
+        transform: translateX(-8pt);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
 }
