@@ -19,7 +19,7 @@ fieldset {
     margin: 14pt auto;
 }
 
-fieldset, title{
+fieldset {
     animation: fade-in-left 3s;
     animation-fill-mode: both;
 }
